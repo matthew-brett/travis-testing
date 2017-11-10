@@ -6,6 +6,12 @@ function rm_mkdir {
     mkdir $path
 }
 
+function local_author {
+    # Run in git repository to set commit author
+    git config user.email "my@noble.self"
+    git config user.name "Noble Self"
+}
+
 # Test fill_submodule function
 current_wd=$PWD
 
