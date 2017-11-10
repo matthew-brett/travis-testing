@@ -1,0 +1,9 @@
+# Set TEST_BUILDS=1 to run library_builders tests
+
+language: generic
+os: osx
+osx_image: xcode8.3
+
+script:
+  - set -x
+  - source test_something.sh
