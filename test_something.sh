@@ -1,3 +1,5 @@
+shell_session_update() { :; }
+
 function rm_mkdir {
     # Remove directory if present, then make directory
     local path=$1
