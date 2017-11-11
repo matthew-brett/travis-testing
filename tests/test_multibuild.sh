@@ -2,5 +2,9 @@
 source common_utils.sh
 source tests/utils.sh
 
-# source tests/test_common_utils.sh
-source tests/test_fill_submodule.sh
+# Test fill_submodule function
+current_wd=$PWD
+
+rm_mkdir tmp_repos
+cd tmp_repos
+mkdir project
