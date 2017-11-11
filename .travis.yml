@@ -11,4 +11,4 @@ matrix:
 
 script:
   - set -x
-  - source test_multibuild.sh
+  - source tests/test_multibuild.sh
