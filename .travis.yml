@@ -1,13 +1,8 @@
 # Set TEST_BUILDS=1 to run library_builders tests
 
 language: generic
-
-matrix:
-  include:
-    - os: osx
-      osx_image: xcode8.3
-      env:
-        - PYTHON_VERSION=3.5
+os: osx
+osx_image: xcode8.3
 
 script:
   - set -x
