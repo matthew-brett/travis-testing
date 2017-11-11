@@ -5,9 +5,7 @@ os: osx
 osx_image: xcode8.3
 
 script:
-  - set -x
-  - set -e
+  - set -ex
   - shell_session_update() { :; }
   - mkdir tmp_repos
   - cd tmp_repos
-  - mkdir project
