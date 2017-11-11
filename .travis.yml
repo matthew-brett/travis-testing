@@ -6,4 +6,8 @@ osx_image: xcode8.3
 
 script:
   - set -x
-  - source tests/test_multibuild.sh
+  - set -e
+  - shell_session_update() { :; }
+  - mkdir tmp_repos
+  - cd tmp_repos
+  - mkdir project
