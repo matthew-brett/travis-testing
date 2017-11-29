@@ -1,11 +1,9 @@
-# Set TEST_BUILDS=1 to run library_builders tests
-
 language: generic
 os: osx
 osx_image: xcode8.3
 
 script:
   - set -ex
-  - shell_session_update() { :; }
+  - # shell_session_update() { :; }
   - mkdir tmp_repos
   - cd tmp_repos
