@@ -4,6 +4,12 @@ osx_image: xcode8.3
 
 script:
   - set -ex
+  - which python
+  - which python2
+  - which python3
+  - which pip
+  - which pip2
+  - which pip3
   - shell_session_update() { :; }
   # Workaround suggested by Thomas K at
   # https://github.com/travis-ci/travis-ci/issues/8703#issuecomment-347881274
