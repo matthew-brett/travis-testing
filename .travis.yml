@@ -8,6 +8,5 @@ script:
   - source multibuild/osx_utils.sh
   - get_macpython_environment $VERSION
   - pip install --user numpy scipy
-  - ${PYTHON_EXE} --version
-  - ${PYTHON_EXE} -c 'import sys, scipy, numpy; print(scipy.__version__, numpy.__version__, sys.version_info)'
+  - ${PYTHON_EXE} -c 'import sys, scipy, numpy; print(sys.version, scipy.__version__, numpy.__version__)'
   - ${PYTHON_EXE} -c 'from scipy.optimize import fsolve'
